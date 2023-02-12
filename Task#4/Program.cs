@@ -1,14 +1,45 @@
 ﻿// Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
-Console.WriteLine("Gimme a number");
+Console.WriteLine("Please, gimme a number");
 int N = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Here is your row of even numbers");
-for (int i = 1; i <= N; i++)
+
+if (N % 2 == 0)
 {
-    if (i % 2 == 0)
+    for (int i = 1; i <= N; i++)
     {
-        Console.Write(i);
-        Console.Write(", ");
+        if (i == N)
+        {
+            Console.Write(i);
+        }
+        else
+        {
+            if (i % 2 == 0)
+            {
+                Console.Write(i);
+                Console.Write(", ");
+            }
+        }
     }
 }
+else
+{
+    for (int i = 1; i <= N; i++)
+    {
+        if (i == N - 1)
+        {
+            Console.Write(i);
+        }
+        else
+        {
+            if (i % 2 == 0)
+            {
+                Console.Write(i);
+                Console.Write(", ");
+            }
+        }
+    }
+}
+
+// код может значительно короче если забить на запятую которая появляется в конце ряда, но мне кажется все равно есть решение попроще с меньшим кол-вом действий
