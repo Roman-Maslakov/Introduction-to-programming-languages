@@ -4,7 +4,8 @@ Console.WriteLine("Input the first number");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input the second number");
 int b = Convert.ToInt32(Console.ReadLine());
-if(a > b)
+
+if (a > b)
 {
     Console.Write("The greatest number - ");
     Console.Write(a);
