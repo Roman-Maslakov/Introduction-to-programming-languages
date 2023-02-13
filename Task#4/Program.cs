@@ -13,13 +13,10 @@ if (N % 2 == 0)
         {
             Console.Write(i);
         }
-        else
+        else if (i % 2 == 0)
         {
-            if (i % 2 == 0)
-            {
-                Console.Write(i);
-                Console.Write(", ");
-            }
+            Console.Write(i);
+            Console.Write(", ");
         }
     }
 }
@@ -31,15 +28,10 @@ else
         {
             Console.Write(i);
         }
-        else
+        else if (i % 2 == 0)
         {
-            if (i % 2 == 0)
-            {
-                Console.Write(i);
-                Console.Write(", ");
-            }
+            Console.Write(i);
+            Console.Write(", ");
         }
     }
 }
-
-// код может быть значительно короче если забить на запятую которая появляется в конце ряда, но мне кажется все равно есть решение попроще с меньшим кол-вом действий
